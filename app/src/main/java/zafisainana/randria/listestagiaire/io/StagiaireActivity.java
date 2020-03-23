@@ -1,6 +1,7 @@
 package zafisainana.randria.listestagiaire.io;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
@@ -8,7 +9,9 @@ import android.os.Bundle;
 public class StagiaireActivity extends AppCompatActivity {
 
     String Nom_S[], Adresse_S[], Email_S[];
-    int images[] = {R.drawable.avatar,R.drawable.avatar,R.drawable.avatar,R.drawable.avatar,R.drawable.avatar,R.drawable.avatar,R.drawable.avatar,R.drawable.avatar,R.drawable.avatar,R.drawable.avatar,R.drawable.avatar,R.drawable.avatar,
+    int images[] = {R.drawable.avatar,R.drawable.avatar,R.drawable.avatar,R.drawable.avatar,
+            R.drawable.avatar,R.drawable.avatar,R.drawable.avatar,R.drawable.avatar,R.drawable.avatar,
+            R.drawable.avatar,R.drawable.avatar,R.drawable.avatar,
             R.drawable.avatar,R.drawable.avatar,R.drawable.avatar};
     RecyclerView recyclerView;
 
@@ -25,5 +28,8 @@ public class StagiaireActivity extends AppCompatActivity {
         Email_S = getResources().getStringArray(R.array.Email_Stagiaire);
 
         MyAdapter myAdapter = new MyAdapter(this, Nom_S, Adresse_S,Email_S,images);
+        recyclerView.setAdapter(myAdapter);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+
     }
 }
