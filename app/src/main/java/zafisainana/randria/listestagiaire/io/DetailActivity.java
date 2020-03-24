@@ -26,12 +26,15 @@ public class DetailActivity extends AppCompatActivity {
         myAdresse = findViewById(R.id.MyAdresse);
         myEmail = findViewById(R.id.MyEmail);
 
+
+        //initialisation
         getData();
         setData();
     }
     private void getData(){
 
-        // on vérifie qu'il y a des données pour renvoyer la vue
+        // on vérifie qu'il y a des données pour renvoyer à l'interface
+        // les noms  doivent etre exactement ceux de MyAdapter
         if (getIntent().hasExtra("myImages") && getIntent().hasExtra("data1") &&
                 getIntent().hasExtra("data2")&& getIntent().hasExtra("data3")){
 
@@ -41,7 +44,7 @@ public class DetailActivity extends AppCompatActivity {
             myImages=getIntent().getIntExtra("myImages",1);
 
         }else{
-            // si pas de data
+            // si pas de data, mais il n'y a pas de raison
             Toast.makeText(this,"pas d'entree",Toast.LENGTH_SHORT).show();
         }
 

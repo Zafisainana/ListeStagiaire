@@ -8,11 +8,13 @@ import android.os.Bundle;
 
 public class StagiaireActivity extends AppCompatActivity {
 
+    // les données sont dans le strings.xml
     String Nom_S[], Adresse_S[], Email_S[];
     int images[] = {R.drawable.avatar,R.drawable.avatar,R.drawable.avatar,R.drawable.avatar,
             R.drawable.avatar,R.drawable.avatar,R.drawable.avatar,R.drawable.avatar,R.drawable.avatar,
             R.drawable.avatar,R.drawable.avatar,R.drawable.avatar,
             R.drawable.avatar,R.drawable.avatar,R.drawable.avatar};
+
     RecyclerView recyclerView;
 
 
