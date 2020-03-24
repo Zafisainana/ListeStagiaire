@@ -23,9 +23,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        mEdLogin = (EditText) findViewById(R.id.ed_Login);
-        mEdPassword = (EditText) findViewById(R.id.ed_Password);
-        mBtnLogin = (Button) findViewById(R.id.btn_Login);
+        mEdLogin = (EditText) findViewById(R.id.editLogin);
+        mEdPassword = (EditText) findViewById(R.id.editPassword);
+        mBtnLogin = (Button) findViewById(R.id.btnValider);
 
         mBtnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
