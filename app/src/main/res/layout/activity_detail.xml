@@ -17,7 +17,7 @@
         app:srcCompat="@drawable/avatar" />
 
     <TextView
-        android:id="@+id/Nom_Txt"
+        android:id="@+id/MyName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="72dp"
@@ -28,22 +28,22 @@
         app:layout_constraintTop_toBottomOf="@+id/MainImageView" />
 
     <TextView
-        android:id="@+id/Adresse_Txt"
+        android:id="@+id/MyAdresse"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Nom_Txt" />
+        app:layout_constraintTop_toBottomOf="@+id/MyName" />
 
     <TextView
-        android:id="@+id/Email_txt"
+        android:id="@+id/MyEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Adresse_Txt" />
+        app:layout_constraintTop_toBottomOf="@+id/MyAdresse" />
 </androidx.constraintlayout.widget.ConstraintLayout>
