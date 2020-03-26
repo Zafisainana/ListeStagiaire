@@ -10,10 +10,10 @@ public class StagiaireActivity extends AppCompatActivity {
 
     // les données sont dans le strings.xml
     String Nom_S[], Adresse_S[], Email_S[];
-    int images[] = {R.drawable.avatar,R.drawable.avatar,R.drawable.avatar,R.drawable.avatar,
-            R.drawable.avatar,R.drawable.avatar,R.drawable.avatar,R.drawable.avatar,R.drawable.avatar,
-            R.drawable.avatar,R.drawable.avatar,R.drawable.avatar,
-            R.drawable.avatar,R.drawable.avatar,R.drawable.avatar};
+    int images[] = {R.drawable.hommea,R.drawable.femmea,R.drawable.hommea,R.drawable.hommea,
+            R.drawable.hommea,R.drawable.femmea,R.drawable.femmea,R.drawable.femmea,R.drawable.femmea,
+            R.drawable.hommea,R.drawable.femmea,R.drawable.femmea,
+            R.drawable.hommea,R.drawable.hommea,R.drawable.hommea};
 
     RecyclerView recyclerView;
 
